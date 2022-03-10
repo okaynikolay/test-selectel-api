@@ -1,0 +1,7 @@
+{
+	"user": "user", 
+	"pwd":"zxc123",
+	"db":"db",
+	"host":"localhost",
+	"port":"5432"
+}

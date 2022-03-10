@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+
+  postgres:
+    build:
+      context: ${PWD}
+    volumes:
+      - $PWD/pg-data/:/var/lib/postgresql/data
+      - $PWD/python-app:/var/www/html
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: 'user'
+      POSTGRES_DB: 'db'
+      POSTGRES_PASSWORD: 'zxc123'
